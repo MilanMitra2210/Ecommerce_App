@@ -3,6 +3,7 @@ const colors = require('colors');
 const dotenv = require('dotenv');
 const morgan = require('morgan');
 const connectDB = require('./config/db.js');
+const authRoute = require('./routes/authRoute.js');
 
 //configure env
 dotenv.config();
@@ -16,6 +17,9 @@ const app = express();
 //middleware
 app.use(express.json());
 app.use(morgan('dev'));
+
+//routes
+app.use('/api/v1/auth', authRoute);
 
 //rest api
 app.get('/' , (req, res) =>{
