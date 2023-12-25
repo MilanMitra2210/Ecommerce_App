@@ -103,6 +103,6 @@ const loginController = async (req , res) => {
 }
 //testcontroller
 const testController =  (req, res) =>{
-    res.send('Peotected route')
+    res.send('Protected route')
 }
 module.exports = {registerController, loginController, testController};
