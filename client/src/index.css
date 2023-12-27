@@ -89,6 +89,6 @@ font-family: 'Poppins', sans-serif; */
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 75vh;
   flex-direction: column;
 }
