@@ -27,7 +27,7 @@ const AuthProvider = ({ children }) => {
 };
 
 //custom hook
-
+//clone testing
 const useAuth = () => useContext(AuthContext);
 
 export { useAuth, AuthProvider };
